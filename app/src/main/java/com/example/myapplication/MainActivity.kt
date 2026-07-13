@@ -62,11 +62,10 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun BusinessCard() {
-    // Advanced radial gradient for a premium "studio light" backdrop effect
     val backgroundGradient = Brush.radialGradient(
         colors = listOf(
-            Color(0xFF0F5A36), // Vibrant center forest green
-            Color(0xFF02140D)  // Deep midnight green edge
+            Color(0xFF0F5A36),
+            Color(0xFF02140D)
         ),
         radius = 1200f
     )
@@ -96,7 +95,7 @@ fun BusinessCard() {
             text = "Jhonmark Tecson Lumacang",
             fontSize = 32.sp,
             color = Color.White,
-            fontWeight = FontWeight.Medium, // Slightly heavier weight for improved legibility
+            fontWeight = FontWeight.Medium,
             textAlign = TextAlign.Center,
             modifier = Modifier.padding(horizontal = 28.dp)
         )
@@ -108,7 +107,7 @@ fun BusinessCard() {
             color = Color(0xFF69F0AE),
             fontSize = 14.sp,
             fontWeight = FontWeight.Bold,
-            letterSpacing = 4.sp // Elegant corporate layout spacing
+            letterSpacing = 4.sp
         )
 
         Spacer(modifier = Modifier.height(36.dp))
@@ -120,7 +119,7 @@ fun BusinessCard() {
                 .shadow(10.dp, RoundedCornerShape(24.dp)),
             shape = RoundedCornerShape(24.dp),
             colors = CardDefaults.cardColors(
-                containerColor = Color(0x1AFFFFFF) // Frosted glass window tint
+                containerColor = Color(0x1AFFFFFF)
             ),
             border = BorderStroke(
                 width = 1.dp,
@@ -159,7 +158,7 @@ fun ContactInfo(
     Row(
         verticalAlignment = Alignment.CenterVertically
     ) {
-        // High-tech circular badge background for the icons
+
         Box(
             contentAlignment = Alignment.Center,
             modifier = Modifier
@@ -179,7 +178,7 @@ fun ContactInfo(
         Text(
             text = text,
             fontSize = 15.sp,
-            color = Color(0xFFE0E0E0), // Soft off-white to reduce eye strain
+            color = Color(0xFFE0E0E0),
             fontWeight = FontWeight.Normal
         )
     }
