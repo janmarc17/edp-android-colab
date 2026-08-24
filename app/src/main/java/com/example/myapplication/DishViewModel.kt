@@ -6,6 +6,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 
 class DishViewModel : ViewModel() {
+
     // The ONE source of truth for the whole app.
     // _dishes is private and writable; dishes is public and read-only.
     private val _dishes = MutableStateFlow(
