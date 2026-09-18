@@ -8,7 +8,7 @@ plugins {
 android {
     namespace = "com.example.myapplication"
     compileSdk {
-        version = release(37) {
+        version = release(36) {
             minorApiLevel = 1
         }
     }
@@ -67,4 +67,9 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.10.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.10.0")
     implementation("androidx.compose.material:material-icons-extended")
+    val cx = "1.6.1"
+    implementation("androidx.camera:camera-camera2:$cx")
+    implementation("androidx.camera:camera-lifecycle:$cx")
+    implementation("androidx.camera:camera-compose:$cx")
+    implementation("com.google.android.gms:play-services-location:21.4.0")
 }
